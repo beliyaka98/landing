@@ -34,8 +34,9 @@ a {
     font-weight: 600; }
 
 .custom-navbar {
-  background: #3b5d50 !important;
-  padding-top: 20px;
+  background-color: #9f52c5;
+  background-image: linear-gradient(43deg, #9f52c5 0%, #dd80a1 46%, #fecb70 100%);
+  padding-top: 20px;s
   padding-bottom: 20px; }
   .custom-navbar .navbar-brand {
     font-size: 32px;
@@ -111,7 +112,9 @@ a {
         margin-right: 20px; }
 
 .hero {
-  background: #3b5d50;
+  background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
   padding: calc(4rem - 30px) 0 0rem 0; 
 }
   @media (min-width: 768px) {
@@ -145,6 +148,10 @@ a {
       z-index: 2;
       max-width: 780px;
       left: -20px; }
+      @media (min-width: 420px) {
+        .hero .hero-img-wrap img {
+          right: 0px;
+          left: -120px; } }
       @media (min-width: 768px) {
         .hero .hero-img-wrap img {
           right: 0px;
@@ -168,11 +175,19 @@ a {
       background-image: url("../images/dots-light.svg");
       background-size: contain;
       background-repeat: no-repeat;
-      right: -100px;
+      right: -150px;
+      display: none;
+
       top: -0px; }
+      @media (min-width: 450px) {
+        .hero .hero-img-wrap img {
+          display: hidden; } }
+      
       @media (min-width: 1200px) {
         .hero .hero-img-wrap:after {
-          top: -40px; } }
+          top: -40px;
+          display: hidden; 
+        } }
 
 .btn {
   font-weight: 600;
@@ -214,7 +229,13 @@ a {
   color: #2f2f2f; }
 
 .product-section {
+  background-color: white;
   padding: 7rem 0; }
+  @media (max-width: 450px){
+    .product-section {
+      background-color: white;
+      padding: 3rem 0; }
+  }
   .product-section .product-item {
     text-align: center;
     text-decoration: none;
@@ -222,6 +243,10 @@ a {
     position: relative;
     padding-bottom: 50px;
     cursor: pointer; }
+    @media (max-width: 450px){
+      .product-section .product-item {
+        padding-bottom: 20px; }
+    }
     .product-section .product-item .product-thumbnail {
       margin-bottom: 30px;
       position: relative;
@@ -286,7 +311,12 @@ a {
       height: 70%; }
 
 .why-choose-section {
+  background-color: white;
   padding: 7rem 0; }
+  @media (max-width: 450px){
+    .why-choose-section {
+      padding: 3rem 0; }
+  }
   .why-choose-section .img-wrap {
     position: relative; }
     .why-choose-section .img-wrap:before {
@@ -637,8 +667,12 @@ a {
       font-size: 14px !important; }
 
 .untree_co-section {
+  background-color: #f6f6f6;
   padding: 7rem 0; }
-
+  @media (max-width: 450px){
+    .untree_co-section {
+      padding: 3rem 0; }
+  }
 .form-control {
   height: 50px;
   border-radius: 10px;
@@ -662,6 +696,7 @@ a {
 .service {
   line-height: 1.5; }
   .service .service-icon {
+    font-size: 21px;
     border-radius: 10px;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50px;
@@ -672,9 +707,10 @@ a {
     background: #3b5d50;
     margin-right: 20px;
     color: #ffffff; }
+.service-contents a{
+  text-decoration: none;
+}
 
-textarea {
-  height: auto !important; }
 
 .site-blocks-table {
   overflow: auto; }
