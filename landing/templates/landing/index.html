@@ -182,7 +182,7 @@
 				<div class="row justify-content-between">
 					<div class="col-lg-6">
 						<h2 class="section-title">Неліктен біз?</h2>
-						<p>Qcodekz программалау мектебінің басты мақсат сапалы білімді әрбір қазақ баласына қол жетімді ету!</p>
+						<p>Qcodekz программалау мектебінің басты мақсаты - сапалы білімді әрбір қазақ баласына қол жетімді ету! </p>
 						<div class="row my-5">
 							<div class="col-6 col-md-6">
 								<div class="feature">
@@ -240,97 +240,6 @@
 
 		
 
-		
-		<!-- Start Testimonial Slider 
-		<div class="testimonial-section" id="otzyv">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-7 mx-auto text-center">
-						<h2 class="section-title">Отзывтар</h2>
-					</div>
-				</div>
-
-				<div class="row justify-content-center">
-					<div class="col-lg-12">
-						<div class="testimonial-slider-wrap text-center">
-
-							<div id="testimonial-nav">
-								<span class="prev" data-controls="prev"><span class="fa fa-chevron-left"></span></span>
-								<span class="next" data-controls="next"><span class="fa fa-chevron-right"></span></span>
-							</div>
-
-							<div class="testimonial-slider">
-								
-								<div class="item">
-									<div class="row justify-content-center">
-										<div class="col-lg-8 mx-auto">
-
-											<div class="testimonial-block text-center">
-												<blockquote class="mb-5">
-													<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
-												</blockquote>
-
-												<div class="author-info">
-													<h3 class="font-weight-bold">Maria Jones</h3>
-													<span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
-												</div>
-											</div>
-
-										</div>
-									</div>
-								</div> 
-								<!-- END item 
-
-								<div class="item">
-									<div class="row justify-content-center">
-										<div class="col-lg-8 mx-auto">
-
-											<div class="testimonial-block text-center">
-												<blockquote class="mb-5">
-													<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
-												</blockquote>
-
-												<div class="author-info">
-													
-													<h3 class="font-weight-bold">Maria Jones</h3>
-													<span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
-												</div>
-											</div>
-
-										</div>
-									</div>
-								</div> 
-								<!-- END item 
-
-								<div class="item">
-									<div class="row justify-content-center">
-										<div class="col-lg-8 mx-auto">
-
-											<div class="testimonial-block text-center">
-												<blockquote class="mb-5">
-													<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
-												</blockquote>
-
-												<div class="author-info">
-													
-													<h3 class="font-weight-bold">Maria Jones</h3>
-													<span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
-												</div>
-											</div>
-
-										</div>
-									</div>
-								</div> 
-								<!-- END item -
-
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End Testimonial Slider -->
 
 		<!-- Start Contact Form -->
 		<div class="untree_co-section" >
@@ -341,7 +250,7 @@
 	  
 	  
 				  <div class="col-md-8 col-lg-8 pb-4">
-					
+	  
 	  
 					<div class="row mb-5">
 						<div class="col-lg-3 col-md-6 col-xs-3">
@@ -389,28 +298,28 @@
 					</div>
 	  
 					<form method="post" id="formaa">
-						{% csrf_token %}
+						<input type="hidden" name="csrfmiddlewaretoken" value="eFLp4f3wlTboV9MsSmgL2ydVFEESiyioPJbxMezYQARoOn3pXW9y6wsItA6cCwnj">
 					  <div class="row">
 						<div class="col-6">
 						  <div class="form-group">
 							<label class="text-black" for="fname">Атыңыз</label>
-							{{form.name}}
+							<input type="text" name="name" class="form-control" id="fname" maxlength="255" required>
 						  </div>
 						</div>
 						<div class="col-6">
 						  <div class="form-group">
 							<label class="text-black" for="lname">Жасыңыз</label>
-							{{form.age}}
+							<input type="text" name="age" class="form-control" id="lname" required>
 						  </div>
 						</div>
 					  </div>
 					  <div class="form-group">
 						<label class="text-black" for="email">Телефон нөміріңіз</label>
-						{{form.phone}}
+						<input type="text" name="phone" class="form-control" id="phone" maxlength="255" required>
 					  </div>
 					  <div class="form-group">
 						<label class="text-black" for="email">Қалаңыз</label>
-						{{form.city}}
+						<input type="text" name="city" class="form-control" id="email" maxlength="255" required>
 					  </div>
 					  
 	  
@@ -473,7 +382,47 @@
 			  document.body.scrollTop = 0;
 			  document.documentElement.scrollTop = 0;
 			}
-			</script>
+		</script>
+		<script>
+			document.getElementById("formaa").addEventListener("submit", function (event) {
+				event.preventDefault(); // Prevent the default form submission
+		
+				// Create an object to hold the form data
+				const formData = new FormData(event.target);
+				const jsonData = {};
+		
+				// Convert the FormData to a JSON object
+				formData.forEach((value, key) => {
+					jsonData[key] = value;
+				});
+		
+				// Define the API endpoint URL
+				const apiUrl = "https://example.com/api/endpoint"; // Replace with your API endpoint URL
+		
+				// Send a POST request to the API with JSON data
+				fetch(apiUrl, {
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify(jsonData),
+				})
+				.then(response => {
+					if (response.ok) {
+						// Successful response handling (e.g., show a success message)
+						console.log("Form data sent successfully");
+						// You can add code here to handle a successful response from the API
+					} else {
+						// Error response handling (e.g., show an error message)
+						console.error("Error sending form data");
+						// You can add code here to handle errors from the API
+					}
+				})
+				.catch(error => {
+					console.error("Error sending form data:", error);
+				});
+			});
+		</script>
 	</body>
 
 </html>
